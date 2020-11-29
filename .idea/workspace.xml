@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="6571080c-c560-4ced-9f61-2b74478168e7" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/CucumberProje/src/test/java/database_stepdefinitions/DbReadStepDef.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CucumberProje/src/test/java/runners/DbRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/CucumberProje/src/test/resources/features/dbokuma.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CucumberProje/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberProje/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CucumberProje/src/test/java/runners/Runner.java" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberProje/src/test/java/runners/Runner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CucumberProje/target/default-cucumber-reports/embedded0.png" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberProje/target/default-cucumber-reports/embedded0.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CucumberProje/target/default-cucumber-reports/report.js" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberProje/target/default-cucumber-reports/report.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CucumberProje/target/json-reports/cucumber.json" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberProje/target/json-reports/cucumber.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CucumberProje/target/test-classes/runners/Runner.class" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberProje/target/test-classes/runners/Runner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CucumberProje/target/xml-report/cucumber.xml" beforeDir="false" afterPath="$PROJECT_DIR$/CucumberProje/target/xml-report/cucumber.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGProje/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGProje/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGProject/debug.log" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGProject/debug.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/TestNGProject/target/test-classes/com/techproed/pages/AmazonNewPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/TestNGProject/target/test-classes/com/techproed/pages/AmazonNewPage.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/AppiumAutomation" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.1\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1kz6CFo7wvJYjQKkcNtLpsXrWOl" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6571080c-c560-4ced-9f61-2b74478168e7" name="Default Changelist" comment="" />
+      <created>1606690943927</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1606690943927</updated>
+    </task>
+    <servers />
+  </component>
+</project>

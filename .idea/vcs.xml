@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/AppiumAutomation" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CucumberFramework" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/CucumberProje" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MavenProje1" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/SeleniumIlkProje" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TestNGFrameWork" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TestNGProje" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TestNGProject" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/TestNgFrameworkSelenium" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/denemeler" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/denemeler/src/Aksamdenemesi" vcs="Git" />
+  </component>
+</project>
