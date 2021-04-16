@@ -69,13 +69,7 @@ public class GetRequest13 extends TestBase {
         }
 
 
-
         softAssert.assertAll();
-
-
-
-
-
 
     }
 

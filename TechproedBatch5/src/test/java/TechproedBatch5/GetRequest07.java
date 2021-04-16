@@ -24,6 +24,8 @@ public class GetRequest07 extends TestBase {
         spec01.queryParam("firstname","Eric");
         spec01.queryParam("lastname","Brown");
 
+        //spec01.queryParams("firstname","Eric","lastname","Brown");
+
         Response response =given().spec(spec01).get("/booking");
 
         response.prettyPrint();

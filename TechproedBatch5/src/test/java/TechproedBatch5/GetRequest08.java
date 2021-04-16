@@ -13,6 +13,7 @@ public class GetRequest08 extends TestBase {
    public void get01(){
        spec01.pathParam("bookingid",5);
 
+                                                          //get("booking/5)"hos karsilanmaz
        Response response=given().spec(spec01).when().get("/booking/{bookingid}");
        response.prettyPrint();
        JsonPath jsonPath=response.jsonPath();
@@ -37,8 +38,6 @@ public class GetRequest08 extends TestBase {
        assertEquals("depositpaid istenilen gibi degil","false",jsonPath.getString("depositpaid"));
        assertEquals("bookingdates.checkin istenilen gibi degil","2018-03-15",jsonPath.getString("bookingdates.checkin"));
        assertEquals("bookingdates.checkout istenilen gibi degil","2020-09-27",jsonPath.getString("bookingdates.checkout"));
-
-
 
    }
 

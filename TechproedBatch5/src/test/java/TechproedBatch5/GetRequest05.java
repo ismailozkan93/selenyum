@@ -24,15 +24,15 @@ public class GetRequest05 {
     accept("application/json").
             when().
             get("https://restful-booker.herokuapp.com/booking/5");
-        //response.prettyPrint();
+        response.prettyPrint();
 
      response.
              then().
              assertThat().
              statusCode(200).contentType(ContentType.JSON).
             body("firstname", Matchers.equalTo("Jim"),
-                "totalprice",Matchers.equalTo(602),
-                "bookingdates.checkin",Matchers.equalTo("2015-06-12"));
+                "totalprice",Matchers.equalTo(179),
+                "bookingdates.checkin",Matchers.equalTo("2016-06-07"));
 
 
 

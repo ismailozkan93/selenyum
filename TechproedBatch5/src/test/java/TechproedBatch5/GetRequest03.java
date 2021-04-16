@@ -41,8 +41,29 @@ And check out date"2019-02-17"
              body("checkout",Matchers.equalTo("2020-09-14"));
             // body("additionalneeds",Matchers.equalTo("Breakfast"));
 
+     /*
+        Response response=given().
+        accept("application/json").
+        when().
+        get("https://restful-booker.herokuapp.com/booking/7");
+        response.prettyPrint();
+        response.then().
+                assertThat().statusCode(200).
+                contentType("application/json").
+                body("firstname",Matchers.equalTo("Eric")).
+                body("lastname",Matchers.equalTo("Wilson")).
+                body("totalprice",Matchers.equalTo(1)).
+                body("depositpaid",Matchers.equalTo(true)).
+                body("bookingdates.checkin",Matchers.equalTo("2000-12-31")).
+                body("bookingdates.checkout",Matchers.equalTo("2020-06-01"));
 
 
+
+
+              //  assertEquals("application/json; charset=utf-8",response.getContentType());
+
+
+*/
 
 
  }

@@ -59,7 +59,6 @@ and()content type="application/json"dir.
     Response response=given().when().get("https://restful-booker.herokuapp.com/booking/1001");
     response.prettyPrint();
 
-
     assertTrue(response.asString().contains("Not Found"));
     assertFalse(response.asString().contains("Techproed"));
    // assertEquals("404",response.getStatusCode());

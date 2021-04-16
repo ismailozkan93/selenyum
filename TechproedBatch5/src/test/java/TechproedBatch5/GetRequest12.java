@@ -1,4 +1,5 @@
 package TechproedBatch5;
+import com.google.gson.Gson;
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -51,7 +52,8 @@ public class GetRequest12 extends TestBase {
 
     softAssert.assertAll();
 
-
+    Gson gson =new Gson();
+    System.out.println(gson.toJson(listOfMap));
 
 
 

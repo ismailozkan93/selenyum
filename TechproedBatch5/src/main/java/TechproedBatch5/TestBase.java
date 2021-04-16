@@ -7,12 +7,19 @@ import io.restassured.specification.RequestSpecification;
 import org.json.JSONObject;
 import org.junit.Before;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import static io.restassured.RestAssured.given;
 
 public class TestBase {
     protected RequestSpecification spec01; //cocuklarin  hepsi kullanabilsin diye
     protected RequestSpecification spec02;
     protected RequestSpecification spec03;
+    protected JSONObject jsonBookingDatesBody;
+    JSONObject jsonRequestrtBody;
+
+
     @Before
     public void setUp01() {
         spec01 = new RequestSpecBuilder().
@@ -35,12 +42,12 @@ public class TestBase {
         }
 
     protected Response createRequestBodyByJsonObjectClass() {
-        JSONObject jsonBookingDatesBody = new JSONObject();
+        jsonBookingDatesBody = new JSONObject();
 
         jsonBookingDatesBody.put("checkin", "2019-02-17");
         jsonBookingDatesBody.put("checkout", "2020-05-05");
 
-        JSONObject jsonRequestrtBody = new JSONObject();
+        jsonRequestrtBody = new JSONObject();
         jsonRequestrtBody.put("firstname", "susan");
         jsonRequestrtBody.put("lastname", "ericson");
         jsonRequestrtBody.put("totalprice", "123");
@@ -58,6 +65,49 @@ public class TestBase {
 
         return response;
     }
+    protected Response createrequestBodyByMap(){
 
+        Map bookingDatesMap = new HashMap<>();
+        bookingDatesMap.put("checkin", "2019-02-17");
+        bookingDatesMap.put("checkout", "2020-05-05");
+
+        Map requestBodyMap = new HashMap<>();
+        requestBodyMap.put("firstname", "susan");
+        requestBodyMap.put("lastname", "ericson");
+        requestBodyMap.put("totalprice", 123);
+        requestBodyMap.put("depositpaid", true);
+        requestBodyMap.put("bookingdates", bookingDatesMap);
+        requestBodyMap.put("additionalneeds", "Wifi");
+
+        Response response = given().contentType(ContentType.JSON).
+                spec(spec01).auth().
+                basic("admin", "password").
+                body(requestBodyMap).
+                when().post("/booking");
+
+        return response;
+    }
+
+    protected Response createRequestBodyByMap(){
+        Map bookingDatesMap = new HashMap<>();
+        bookingDatesMap.put("checkin", "2019-02-17");
+        bookingDatesMap.put("checkout", "2020-05-05");
+
+        Map requestBodyMap = new HashMap<>();
+        requestBodyMap.put("firstname", "susan");
+        requestBodyMap.put("lastname", "ericson");
+        requestBodyMap.put("totalprice", 123);
+        requestBodyMap.put("depositpaid", true);
+        requestBodyMap.put("bookingdates", bookingDatesMap);
+        requestBodyMap.put("additionalneeds", "Wifi");
+
+        Response response = given().contentType(ContentType.JSON).
+                spec(spec01).auth().
+                basic("admin", "password").
+                body(requestBodyMap).
+                when().post("/booking");
+
+                return response;
+    }
 
 }

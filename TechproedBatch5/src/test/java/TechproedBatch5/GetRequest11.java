@@ -1,4 +1,5 @@
 package TechproedBatch5;
+import com.google.gson.Gson;
 import com.sun.scenario.effect.impl.sw.sse.SSEBlend_SRC_OUTPeer;
 import io.restassured.path.json.JsonPath;
 import io.restassured.response.Response;
@@ -37,14 +38,16 @@ public class GetRequest11 extends TestBase {
         SoftAssert softAssert=new SoftAssert();
         softAssert.assertEquals(map.get("completed"),false,"False degerinde degil");
 
-    //userId, title ve id degerlerini verify ediniz.
-    softAssert.assertEquals(map.get("userId"),1,"1 degerinde degil");
+    //userId, title ve id degerlerini verify ediniz.(Hashmap de double alir.)
+    softAssert.assertEquals(map.get("userId"),1.0,"1 degerinde degil");
     softAssert.assertEquals(map.get("title"),"quis ut nam facilis et officia qui","quis ut nam facilis et officia qui degil");
-    softAssert.assertEquals(map.get("id"),2,"2 degerinde degil");
+    softAssert.assertEquals(map.get("id"),2.0,"2 degerinde degil");
 
 
         softAssert.assertAll();
-
+//Map Objesini Json formatina cevirme
+    Gson gson =new Gson();
+    System.out.println(gson.toJson(map));
 
 
 

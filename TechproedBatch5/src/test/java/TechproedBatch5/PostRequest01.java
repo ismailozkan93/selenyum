@@ -11,8 +11,8 @@ public class PostRequest01 extends TestBase{
     /*
         Get Request olusturmak icin sadece endpoint gerekiyordu
         Post Request olusturmak icin gerekenler
-        1)Endpoint sart
-        2)Request Body yani kaydedilcek olan data
+        #1)Endpoint sart
+        #2)Request Body yani kaydedilcek olan data
         3)Autorization sart(eger verilmemisse)
         4)Accept type istege bagli
         5)Content Type (icerik tipi)
@@ -24,7 +24,7 @@ public class PostRequest01 extends TestBase{
                         Post ise olmayan datayi olusturmak icin kullanilir
 
        NOTE: SQL'de doldurulmasi zorunlu alanlar vardir.Not null, primary key,foregin key vb constrains denir.
-             API developer olusturulacak datanin hangi bölümlerini zorunlu kildi ise o kisimlar bos gecilmez
+            API developer olusturulacak datanin hangi bölümlerini zorunlu kildi ise o kisimlar bos gecilmez
              Post request olusturulurken bu kisimlar kesinlikle doldurulmali.
              Sweger dokumantasyonunda bu kisimlar acikca yazilir
              Eger bos gecilirse "400 Bad Request" hatasi aliriz
@@ -84,8 +84,8 @@ public class PostRequest01 extends TestBase{
 
                 softAssert.assertEquals(jsonPath.getString("booking.firstname"),"susan");
                 softAssert.assertEquals(jsonPath.getString("booking.lastname"),"ericson");
-                softAssert.assertEquals(jsonPath.getInt("booking.totalprice"),"123");
-                softAssert.assertEquals(jsonPath.getBoolean("booking.depositpaid"),"true");
+                softAssert.assertEquals(jsonPath.getInt("booking.totalprice"),123);
+                softAssert.assertEquals(jsonPath.getBoolean("booking.depositpaid"),true);
                 softAssert.assertEquals(jsonPath.getString("booking.bookingdates.checkin"),"2019-02-17");
                 softAssert.assertEquals(jsonPath.getString("booking.bookingdates.checkout"),"2020-05-05");
 

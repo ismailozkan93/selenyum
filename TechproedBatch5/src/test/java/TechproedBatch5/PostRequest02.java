@@ -59,7 +59,7 @@ public class PostRequest02 extends TestBase {
 
         Response response=given().contentType(ContentType.JSON).spec(spec01).
                 auth().basic("admin","password123").
-                body(jsonRequestrtBody).//Jsonobject class in body methodu string kabul ettigi icin bu kismi stringe cevrilir
+                body(jsonRequestrtBody.toString()).//Jsonobject class in body methodu string kabul ettigi icin bu kismi stringe cevrilir
                 when().
                 post("/booking");
         response.prettyPrint();

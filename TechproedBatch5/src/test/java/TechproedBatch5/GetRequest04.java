@@ -16,7 +16,10 @@ public class GetRequest04 {
             when().
             get("http://dunny.restapi.example.com/api/v1/employees");
             response.prettyPrint();
-            response.then().assertThat().statusCode(200).contentType(ContentType.JSON).
+            response.
+                    then().
+                    assertThat().
+                    statusCode(200).contentType(ContentType.JSON).
             body("data.id", Matchers.hasSize(24)).//body den bütün data idlerini al ve mathers.hasSize ile kiyasla
             body("data.employee_name",Matchers.hasItem("Asthon Cox")).
            //bütün isimlerin bir list icersinde alinir ve icersinden arana deger bakilir
